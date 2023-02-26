@@ -3,28 +3,28 @@
 ## string
 ```c
 /* is */
-int			ft_isupper(int c);
-int			ft_islower(int c);
-int			ft_isalpha(int c);
-int			ft_isdigit(int c);
-int			ft_isalnum(int c);
-int			ft_isascii(int c);
-int			ft_isprint(int c);
-int			ft_isspace(char c);
-int			ft_ispunct(char c);
+int		ft_isupper(int c);
+int		ft_islower(int c);
+int		ft_isalpha(int c);
+int		ft_isdigit(int c);
+int		ft_isalnum(int c);
+int		ft_isascii(int c);
+int		ft_isprint(int c);
+int		ft_isspace(char c);
+int		ft_ispunct(char c);
 
 bool		is_chr_in_str(char chr, const char *str);
 bool		is_str1chrs_in_str2(const char *str1, const char *str2);
 
-int			ft_toupper(int c);
-int			ft_tolower(int c);
+int		ft_toupper(int c);
+int		ft_tolower(int c);
 
 
 /* str */
-int			ft_strncmp(const char *s1, const char *s2, size_t n);
-int			ft_strncmp_ns(const char *s1, const char *s2, size_t n);
-int			ft_strcmp_ns(const char *s1, const char *s2);
-bool		is_same_str(const char *str1, const char *str2);
+int		ft_strncmp(const char *s1, const char *s2, size_t n);
+int		ft_strncmp_ns(const char *s1, const char *s2, size_t n);
+int		ft_strcmp_ns(const char *s1, const char *s2);
+bool	        is_same_str(const char *str1, const char *str2);
 
 size_t		ft_strlen(const char *s);
 size_t		ft_strlen_ns(const char *s);
@@ -51,8 +51,8 @@ void		ft_striteri(char *s, void (*f)(unsigned int, char*));
 
 /* mem */
 void		ft_bzero(void *s, size_t n);
-int			ft_memcmp(const void *s1, const void *s2, size_t n);
-void		*ft_memset(void *s, int c, size_t n);
+int             ft_memcmp(const void *s1, const void *s2, size_t n);
+void            *ft_memset(void *s, int c, size_t n);
 void		*ft_memset_ns(void *s, int c, size_t n);
 void		*ft_memchr(const void *s, int c, size_t n);
 void		*ft_memcpy(void *dst, const void *src, size_t n);
@@ -61,7 +61,7 @@ void		*ft_memmove(void *dst, const void *src, size_t len);
 ## std
 ```c
 char		*ft_itoa(int n);
-int			ft_atoi(const char *str, bool *is_success);
+int	        ft_atoi(const char *str, bool *is_success);
 long long	ft_strtoll(char *num, bool *is_success);
 void		*ft_calloc(size_t count, size_t size);
 ```
@@ -109,13 +109,13 @@ size_t		ft_lstsize_bdi(t_list_bdi *lst);
 ```c
 size_t		min_size(size_t a, size_t b);
 size_t		max_size(size_t a, size_t b);
-int			min_int(int a, int b);
-int			max_int(int a, int b);
+int		min_int(int a, int b);
+int		max_int(int a, int b);
 ```
 
 ## printf
 ```c
-int			ft_printf(const char *fmt, ...);
-int			ft_dprintf(int fd, const char *fmt, ...);
+int		ft_printf(const char *fmt, ...);
+int		ft_dprintf(int fd, const char *fmt, ...);
 ```
 
