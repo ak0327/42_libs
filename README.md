@@ -58,6 +58,9 @@ void		*ft_memchr(const void *s, int c, size_t n);
 void		*ft_memcpy(void *dst, const void *src, size_t n);
 void		*ft_memmove(void *dst, const void *src, size_t len);
 ```
+
+<br>
+
 ## std
 ```c
 char		*ft_itoa(int n);
@@ -66,6 +69,7 @@ long long	ft_strtoll(char *num, bool *is_success);
 void		*ft_calloc(size_t count, size_t size);
 ```
 
+<br>
 
 ## put
 ```c
@@ -74,6 +78,8 @@ void		ft_putstr_fd(char *s, int fd);
 void		ft_putendl_fd(char *s, int fd);
 void		ft_putnbr_fd(int n, int fd);
 ```
+
+<br>
 
 ## list
 ```c
@@ -105,6 +111,8 @@ void		ft_lstiter_bdi(t_list_bdi *lst, void (*f)(void *));
 size_t		ft_lstsize_bdi(t_list_bdi *lst);
 ```
 
+<br>
+
 ## math
 ```c
 size_t		min_size(size_t a, size_t b);
@@ -113,7 +121,12 @@ int		min_int(int a, int b);
 int		max_int(int a, int b);
 ```
 
+<br>
+
 ## printf
+* Format : `%[flag][width].[precision][conversion]`
+  * Conversion : `cspdiuxX%`
+  * flags : `#`, `-`, `+`, `' '(space)`, `0`, `.`, `*`
 ```c
 int		ft_printf(const char *fmt, ...);
 int		ft_dprintf(int fd, const char *fmt, ...);
