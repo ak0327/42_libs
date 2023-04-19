@@ -1,6 +1,6 @@
 # 42_libs
 
-`*_ns` means Null-Safety
+`<func name>_ns` means Null-Safety
 
 ## string
 ```c
