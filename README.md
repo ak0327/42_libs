@@ -128,7 +128,8 @@ int		max_int(int a, int b);
 ## printf
 * Format : `%[flag][width].[precision][conversion]`
   * Conversion : `cspdiuxX%`
-  * flags : `#`, `-`, `+`, `' '(space)`, `0`, `.`, `*`
+  * flags : `#`, `-`, `+`, `' '(space)`, `0`, `.`
+  * width, precision can use : `*`
 ```c
 int		ft_printf(const char *fmt, ...);
 int		ft_dprintf(int fd, const char *fmt, ...);
